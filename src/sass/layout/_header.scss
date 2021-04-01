@@ -1,0 +1,52 @@
+
+
+.header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    box-shadow: $primary-shadow;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1180px) {
+    .header-wrapper-menu {
+        display: none;
+    }
+}
+
+.header-logo {
+    display: inherit;
+    position: relative;
+
+    img {
+        width: 116px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        left: 29px;
+        top: 6px;
+    }
+}
+
+.icon-mobile {
+    display: inline-block;
+    background: transparent;
+    background-image: url(../images/burg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 15px;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
