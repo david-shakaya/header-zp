@@ -1,5 +1,47 @@
 .header {
-    padding-top: 22px;
+    padding-top: 17px;
+    @media screen and (min-width: 769px) {
+        .header {
+            padding-top: 22px;
+        }
+    }
+
+    // &__wrapper {
+    //     &__
+    // }
+    &__btn-close {
+        border: none;
+        background-image: url('../images/burger.svg');
+
+        // background-color: transparent;
+        width: 23px;
+        height: 15px;
+    }
+}
+
+.logo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// .logo {
+//   &__img {
+//   }
+// }
+.menu {
+    // &__btn {
+    // }
+    // &__item {
+    // }
+    // &__link {
+    // }
+    // &__list {
+    // }
+    // &__navigation {
+    // }
+    &__wrapper-mob {
+        visibility: hidden;
+    }
 }
 
 // @media screen and (max-width: 1180px) {
