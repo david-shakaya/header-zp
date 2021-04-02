@@ -1,24 +1,31 @@
-// .form {
-//   &__btn {
-//   }
-//   &__el {
-//   }
-//   &__input {
-//   }
-//   &__text {
-//   }
-// }
+.form {
+    margin-top: 51px;
+    // &__btn {
+    // }
+    // &__el {
+    // }
+    // &__input {
+    // }
+    // &__text {
+    // }
+}
 .hero {
-    //   &__text {
-    //   }
-    //   &__title {
-    //   }
+    &__text {
+        margin-top: 26px;
+    }
+    &__title {
+        margin-top: 87px;
+    }
     &__wrapper {
+        position: absolute;
+        background-repeat: no-repeat;
         z-index: -1;
-        background-image: url('../images/pic.png');
+        background-image: url(../images/pic.png);
         background-color: #3a3a3a;
-        // background-image: linear-gradient(#323231, #4f4f4f),
-        //     url(../images/pic.png);
+        top: 0;
+        left: 0;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
