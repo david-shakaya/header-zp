@@ -1,0 +1,71 @@
+.select-type__icon {
+    background-image: url(../images/arrow.svg);
+    display: inline-block;
+    vertical-align: super;
+    width: 8px;
+    height: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+.select {
+    position: relative;
+}
+.select.is-active .select__body {
+    display: block;
+}
+
+.select__header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 3px;
+
+    color: $main-text;
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 17px;
+    text-align: left;
+
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+    padding-right: 15px;
+    background-color: #ffffff20;
+}
+
+.select__body {
+    background-color: #454545;
+    border: 1px solid #cccccc;
+    box-shadow: $primary-shadow;
+    border-top: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 3;
+}
+.select__item {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.select__item:hover {
+    background-color: #7e7e7e;
+}
+.select__option-text {
+    color: $main-text;
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 17px;
+}
