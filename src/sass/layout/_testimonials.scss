@@ -1,0 +1,52 @@
+// .button {
+// }
+// .handle {
+//   &__btn {
+//   }
+//   &__counter {
+//     &--dynamic {
+//     }
+//     &--static {
+//     }
+//   }
+//   &__wrapper {
+//   }
+// }
+
+.testimonials {
+    padding-top: 42px;
+    padding-bottom: 51px;
+    &__card {
+        width: 287px;
+        padding-top: 30px;
+        padding-bottom: 49px;
+        padding-right: 18px;
+        padding-left: 21px;
+    }
+    &__item {
+        opacity: 0;
+        &-- {
+            opacity: 1;
+            box-shadow: 1px 3px 5px 1px rgba(34, 60, 80, 0.26);
+        }
+    }
+    //   &__name {
+    //   }
+    &__slider {
+        display: flex;
+    }
+    //   &__text {
+    //   }
+    //   &__title {
+    //   }
+    &__wrapper {
+        @media screen and(max-width:767px) {
+            width: 320px;
+            padding-left: 16px;
+            padding-right: 17px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        overflow: hidden;
+    }
+}
