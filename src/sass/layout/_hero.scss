@@ -1,29 +1,94 @@
 .form {
-    margin-top: 51px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-radius: 5px;
+    background-color: #00000063;
     // &__btn {
     // }
     // &__el {
     // }
-    // &__input {
-    // }
-    // &__text {
-    // }
+    &__input-email {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    &__input-text {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin-bottom: 14px;
+
+        color: #ffffff;
+        font-family: $title-font;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: Regular;
+        letter-spacing: normal;
+        line-height: 14px;
+        text-align: center;
+    }
 }
+
 .hero {
     &__text {
-        margin-top: 26px;
+        color: $main-text;
+        font-family: Karla;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: center;
+        font-style: normal;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 17px;
+            height: 23px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(../images/down.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
     }
     &__title {
-        margin-top: 87px;
+        color: $main-text;
+        font-family: $title-font;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43px;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        font-style: normal;
+        letter-spacing: normal;
+
+        margin-top: 107px;
+        margin-bottom: 16px;
     }
     &__wrapper {
         position: absolute;
         background-repeat: no-repeat;
-        z-index: -1;
+        z-index: 0;
         background-image: url(../images/pic.png);
         background-color: #3a3a3a;
-        top: 0;
-        left: 0;
+        top: -28px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 320px;
         padding-left: 16px;
         padding-right: 16px;
     }
