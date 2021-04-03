@@ -50,6 +50,7 @@
     "usedcss": "^1.0.7"
   },
   "dependencies": {
-    "styleselect": "^1.0.3"
+    "styleselect": "^1.0.3",
+    "tiny-slider": "^2.9.3"
   }
 }

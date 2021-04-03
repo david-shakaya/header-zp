@@ -1,3 +1,17 @@
+// import { tns } from 'tiny-slider';
+
+console.log(tns);
+var slider = tns({
+    container: '#center',
+    items: 1,
+    center: true,
+    fixedWidth: 287,
+    loop: false,
+    swipeAngle: true,
+    speed: 400,
+    gutter: 30,
+});
+
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select-type__item');
