@@ -5,8 +5,10 @@
     padding-left: 18px;
     border-radius: 5px;
     background-color: #00000063;
-    // &__btn {
-    // }
+    &__btn {
+        line-height: 13px;
+        text-align: center;
+    }
     // &__el {
     // }
     &__input-email {

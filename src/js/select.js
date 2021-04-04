@@ -10,7 +10,12 @@ var slider = tns({
     swipeAngle: true,
     speed: 400,
     gutter: 30,
+    rewind: true,
+    startIndex: 2,
+    controlsText: ['', ''],
 });
+
+console.log(slider.getInfo().navCurrent);
 
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
