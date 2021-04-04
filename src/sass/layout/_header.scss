@@ -4,7 +4,7 @@
     padding-top: 17px;
     margin-bottom: 689px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
         .header {
             padding-top: 22px;
         }
@@ -13,7 +13,7 @@
     // &__wrapper {
     //     &__
     // }
-    &__btn-close {
+    &__btn-burger {
         border: none;
         background-image: url('../images/burger.svg');
         background-color: transparent;
@@ -28,6 +28,8 @@
     align-items: center;
 }
 .logo {
+    position: relative;
+    z-index: 3;
     background-repeat: no-repeat;
     background-image: url(../images/logo-mob.png);
     width: 77px;
@@ -39,22 +41,22 @@
         height: 36px;
     }
 }
-.menu {
-    // &__btn {
-    // }
-    // &__item {
-    // }
-    // &__link {
-    // }
-    // &__list {
-    // }
-    // &__navigation {
-    // }
-    &__wrapper-mob {
-        visibility: hidden;
-        position: absolute;
-    }
-}
+// .menu {
+// &__btn {
+// }
+// &__item {
+// }
+// &__link {
+// }
+// &__list {
+// }
+// &__navigation {
+// }
+// &__wrapper-mob {
+//     visibility: hidden;
+//     position: absolute;
+// }
+// }
 
 // @media screen and (max-width: 1180px) {
 //     .header-wrapper-menu {
