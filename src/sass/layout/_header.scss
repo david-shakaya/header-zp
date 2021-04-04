@@ -5,20 +5,27 @@
     margin-bottom: 689px;
 
     @media screen and (min-width: 768px) {
-        .header {
-            padding-top: 22px;
+        padding-top: 22px;
+    }
+
+    &__wrapper {
+        // position: absolute;
+        // top: 0;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
-    // &__wrapper {
-    //     &__
-    // }
     &__btn-burger {
         border: none;
         background-image: url('../images/burger.svg');
         background-color: transparent;
         width: 23px;
         height: 15px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -41,28 +48,31 @@
         height: 36px;
     }
 }
-// .menu {
-// &__btn {
-// }
-// &__item {
-// }
-// &__link {
-// }
-// &__list {
-// }
-// &__navigation {
-// }
-// &__wrapper-mob {
-//     visibility: hidden;
-//     position: absolute;
-// }
-// }
+.menu {
+    // &__btn {
+    // }
+    // &__item {
+    // }
+    // &__link {
+    // }
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    // &__navigation {
+    // }
+    // &__wrapper-mob {
+    //     visibility: hidden;
+    //     position: absolute;
+    // }
+    // }
 
-// @media screen and (max-width: 1180px) {
-//     .header-wrapper-menu {
-//         display: none;
-//     }
-// }
+    // @media screen and (max-width: 1180px) {
+    //     .header-wrapper-menu {
+    //         display: none;
+    // }
+}
 
 // .icon-mobile {
 //     display: inline-block;

@@ -1,18 +1,37 @@
 .menu {
     &__btn {
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translate(-50%, 98px);
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 98px);
+            padding-left: 89px;
+            padding-right: 87px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            line-height: 13px;
+        }
 
-        padding-left: 89px;
-        padding-right: 87px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        line-height: 13px;
+        @media screen and (min-width: 768px) {
+            padding-left: 58px;
+            padding-right: 57px;
+            padding-top: 15px;
+            padding-bottom: 14px;
+            line-height: 13px;
+            font-size: 18px;
+        }
     }
     &__item {
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            &:first-child {
+                margin-right: 54px;
+            }
+            &:nth-child(2n) {
+                margin-right: 69px;
+            }
+        }
     }
     &__link {
         font-family: 'Myriad Pro', sans-serif;
@@ -22,6 +41,15 @@
         font-style: normal;
         letter-spacing: normal;
         line-height: 48px;
+
+        @media screen and (min-width: 768px) {
+            font-family: $text-font;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 13px;
+        }
     }
     &__link--active {
         position: relative;
@@ -35,9 +63,11 @@
         }
     }
 
-    // &__list {
-    //
-    // }
+    &__list {
+        @media screen and (min-width: 768px) {
+            margin-right: 229px;
+        }
+    }
     // &__navigation {
     // }
     &__wrapper-mob {
@@ -55,7 +85,10 @@
 
             background-color: #2d2d35;
         }
-
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+        }
         &--active {
             opacity: 1;
             z-index: 2;
@@ -73,5 +106,9 @@
         background-color: transparent;
         background-repeat: no-repeat;
         background-image: url(../images/close-menu.png);
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 }
