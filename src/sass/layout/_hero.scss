@@ -92,14 +92,19 @@
         // top: -28px;
         // left: 50%;
         // transform: translate(-50%);
+
         width: 320px;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 43px;
+        padding-top: 108px;
         background-image: url(../images/pic.png);
         background-color: #3a3a3a;
         background-repeat: no-repeat;
 
+        @media screen and (max-width: 767px) {
+            transform: translate(0px, -28px);
+        }
         @media screen and (min-width: 768px) {
             background-image: url(../images/pic-desc.png);
             width: 100%;

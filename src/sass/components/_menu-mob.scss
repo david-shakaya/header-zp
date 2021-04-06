@@ -29,7 +29,7 @@
                 margin-right: 54px;
             }
             &:nth-child(2n) {
-                margin-right: 69px;
+                margin-right: 67px;
             }
         }
     }
@@ -76,7 +76,7 @@
             top: 0;
             transform: translate(-5%);
             z-index: -5;
-            opacity: 0;
+            visibility: hidden;
 
             width: 320px;
             padding-top: 189px;
@@ -89,7 +89,7 @@
             align-items: baseline;
         }
         &--active {
-            opacity: 1;
+            visibility: visible;
             z-index: 2;
         }
     }

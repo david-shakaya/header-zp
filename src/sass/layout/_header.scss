@@ -11,9 +11,12 @@
     &__wrapper {
         position: absolute;
         top: 0;
+        padding-top: 18px;
         @media screen and (min-width: 768px) {
+            padding-top: 23px;
             display: flex;
-            justify-content: space-between;
+
+            transform: translate(-1px, 0px);
         }
     }
 
@@ -22,7 +25,8 @@
         background-image: url('../images/burger.svg');
         background-color: transparent;
         width: 23px;
-        height: 15px;
+        height: 12px;
+
         @media screen and (min-width: 768px) {
             display: none;
         }
@@ -31,8 +35,10 @@
 
 .logo__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        margin-right: 304px;
+    }
 }
 .logo {
     position: relative;
@@ -41,7 +47,10 @@
     background-image: url(../images/logo-mob.png);
     width: 77px;
     height: 23px;
-    margin-right: 190px;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 190px;
+    }
 
     @media screen and (min-width: 768px) {
         background-image: url(../images/logo-desct.png);
