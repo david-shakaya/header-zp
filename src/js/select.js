@@ -2,18 +2,57 @@
 
 console.log(tns);
 var slider = tns({
-    container: '#center',
-    items: 1,
-    center: true,
-    fixedWidth: 287,
-    loop: false,
-    swipeAngle: true,
-    speed: 400,
-    gutter: 30,
-    rewind: true,
-    startIndex: 2,
-    controlsText: ['', ''],
+    container: '#responsive',
+    responsive: {
+        320: {
+            items: 1,
+            center: true,
+            fixedWidth: 287,
+            loop: false,
+            swipeAngle: true,
+            speed: 400,
+            gutter: 30,
+            rewind: true,
+            startIndex: 2,
+            controlsText: ['', ''],
+        },
+        768: {
+            fixedWidth: 731,
+            startIndex: 2,
+            gutter: 70,
+            items: 1,
+            center: true,
+            loop: false,
+            swipeAngle: true,
+            speed: 400,
+            rewind: true,
+            controlsText: ['', ''],
+        },
+        1160: {
+            fixedWidth: 731,
+            startIndex: 2,
+            gutter: 70,
+            items: 1,
+            center: true,
+            loop: false,
+            swipeAngle: true,
+            speed: 400,
+            rewind: true,
+            controlsText: ['', ''],
+        },
+    },
 });
+
+// "responsive": {
+//     "350": {
+//       "items": 3,
+//       "controls": true,
+//       "edgePadding": 30
+//     },
+//     "500": {
+//       "items": 4
+//     }
+//   },
 
 console.log(slider.getInfo().navCurrent);
 
