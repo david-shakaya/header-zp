@@ -11,6 +11,7 @@
         width: 1130px;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 36px;
     }
 
     &__btn {
@@ -22,7 +23,13 @@
         padding-top: 15px;
         padding-bottom: 15px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1159px) {
+            display: block;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media screen and (min-width: 1160px) {
             font-size: 18px;
             line-height: 14px;
 
@@ -36,7 +43,7 @@
         }
     }
     &__el {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1160px) {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
@@ -53,11 +60,15 @@
         margin-bottom: 17px;
     }
     &__input-text {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
+
         width: 100%;
-        max-width: 324px;
+        margin-bottom: 35px;
+        @media screen and (min-width: 1160px) {
+            max-width: 324px;
+        }
 
         padding-top: 22px;
         padding-bottom: 18px;
@@ -148,6 +159,10 @@
         letter-spacing: normal;
 
         margin-bottom: 16px;
+        @media screen and (min-width: 768px) and (max-width: 1159px) {
+            margin-top: 25px;
+        }
+
         @media screen and (min-width: 768px) {
             font-size: 72px;
             line-height: 87px;
@@ -170,6 +185,10 @@
         @media screen and (max-width: 767px) {
             transform: translate(0px, -28px);
         }
+        @media screen and (min-width: 768px) and (max-width: 1159px) {
+            transform: translate(0px, -100px);
+        }
+
         @media screen and (min-width: 768px) {
             background-image: url(../images/pic-desc.png);
             background-position: center;
