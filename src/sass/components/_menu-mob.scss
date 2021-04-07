@@ -10,6 +10,9 @@
             padding-top: 15px;
             padding-bottom: 15px;
             line-height: 13px;
+
+            //  ????
+            width: 251px;
         }
 
         @media screen and (min-width: 768px) {
@@ -129,7 +132,7 @@
     }
 }
 
-.menu__wrapper-mob--active {
+.menu__wrapper-mob.menu__wrapper-mob--active {
     visibility: visible;
     z-index: 2;
 }
