@@ -206,3 +206,9 @@
         margin-bottom: 17px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .hero > .container {
+        max-width: 3000px;
+    }
+}

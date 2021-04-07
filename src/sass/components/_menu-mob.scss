@@ -101,13 +101,13 @@
 
             background-color: #2d2d35;
         }
+        // &--active {
+        //     visibility: visible;
+        //     z-index: 2;
+        // }
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: baseline;
-        }
-        &--active {
-            visibility: visible;
-            z-index: 2;
         }
     }
 
@@ -127,4 +127,9 @@
             display: none;
         }
     }
+}
+
+.menu__wrapper-mob--active {
+    visibility: visible;
+    z-index: 2;
 }

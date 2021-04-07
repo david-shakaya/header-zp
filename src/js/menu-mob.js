@@ -1,5 +1,3 @@
-// .menu__wrapper-mob--active
-
 const menuWrapperRef = document.querySelector('.menu__wrapper-mob');
 const btnBurgerRef = document.querySelector('.header__btn-burger');
 const btnCloseMenuRef = document.querySelector('.menu__btn-close');

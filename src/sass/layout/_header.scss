@@ -21,6 +21,7 @@
     }
 
     &__btn-burger {
+        cursor: pointer;
         border: none;
         background-image: url('../images/burger.svg');
         background-color: transparent;
@@ -35,6 +36,7 @@
 
 .logo__wrapper {
     display: flex;
+
     align-items: center;
     @media screen and (min-width: 768px) {
         margin-right: 50px;
@@ -72,7 +74,8 @@
         @media screen and (min-width: 768px) {
             display: flex;
         }
-        @media screen and (max-width: 1159px) {
+
+        @media screen and (min-width: 768px) and (max-width: 1159px) {
             margin-right: 83px;
         }
     }

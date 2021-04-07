@@ -9,12 +9,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://david-shakaya.github.io/SunBurn-test",
+  "homepage": "https://david-shakaya.github.io/header-zp",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Shakaya David",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
